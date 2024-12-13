@@ -1,0 +1,25 @@
+<script>
+    //Problema:
+    /*
+    Considere a seguinte lista de itens:
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    Verifique quais itens da  lista são palíndromos e retorne a lista com os palíndromos encontrados. Os demais devem ser desconsiderados.
+    */
+
+    //ENTRADA
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    let pali = [];
+
+
+    //PROCESSAMENTO
+    for(let palavra of lista) {
+        if (palavra === palavra.split("").reverse().join("")) {
+            pali.push(palavra); 
+        }
+    }
+
+
+    //SAÍDA
+    document.write(pali)
+
+</script>

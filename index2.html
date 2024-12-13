@@ -1,0 +1,24 @@
+<script>
+    // Problema: Contar vogais
+    /*
+    Considere o seguinte texto:
+    let texto = 'O rato roeu a roupa do rei de Roma';
+    Conte quantas vogais existem no texto e retorne a quantidade encontrada.
+    
+    UTILIZE FOR...OF!
+    */
+
+    // ENTRADA
+    let texto = 'O rato roeu a roupa do rei de Roma';
+    let contador = 0;
+
+    // PROCESSAMENTO
+    for (let letra of texto) { 
+        if ("AEIOUaeiou".includes(letra)) {
+            contador++;
+        }
+    }
+
+    // SAÍDA
+    document.write(`o total de vogais na sua palavra é de ${contador} `);
+</script>
